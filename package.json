@@ -1,0 +1,14 @@
+{
+  "name": "ai-prompt-lib",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @ai-prompt-lib/web dev",
+    "build": "pnpm --filter @ai-prompt-lib/web build",
+    "preview": "pnpm --filter @ai-prompt-lib/web preview",
+    "typecheck": "pnpm --filter @ai-prompt-lib/web exec tsc -b",
+    "test": "pnpm --filter @ai-prompt-lib/web test"
+  }
+}
