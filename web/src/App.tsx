@@ -205,7 +205,7 @@ export default function App() {
                 <p className="text-sm mt-1" style={{ color: "var(--muted)" }}>
                   {search || activeTags.length > 0
                     ? "Try a different search or clear your tag filters."
-                    : "Click “New Prompt” to add your first one."}
+                    : "Click "New Prompt" to add your first one."}
                 </p>
               </div>
               {(search || activeTags.length > 0) && (

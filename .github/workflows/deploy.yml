@@ -20,8 +20,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: pnpm
       - name: Install
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install
       - name: Build
         run: pnpm build
       - name: Verify build output
@@ -40,4 +41,3 @@ jobs:
             --delete \
             --no-progress
           echo "Deployed apps/${GITHUB_REPOSITORY##*/} from ${GITHUB_SHA::7} to R2"
-
